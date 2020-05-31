@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Home
+        </title>
+        <style>
+            body{
+                background-color: black;
+                color: antiquewhite;
+                padding: 1rem;
+            }
+            .row 
+            {
+                display: flex;
+            }
+            .column 
+            {
+                flex: 30%;
+                padding: .1rem;
+            }
+            button {
+                background-color: Transparent;
+                background-repeat:no-repeat;
+                border: none;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                color: antiquewhite;
+                margin: 0.5rem;
+            }
+            button:hover{
+                background-color: antiquewhite;
+                color: black;
+            }
+         
+        </style>
+    </head>
+    <body>
+        <section class="row">
+            <article class="column">
+                <img src="THE LOCKDOWN.png">
+                <br>
+                Made by <em>Nitin Ranjan</em> on Lockdown Day 72
+            </article>
+            <article class="column" style="text-align: center; margin-top: 10%; border-left: 0.2rem solid white;">
+                <audio id="myAudio" autoplay>   
+                    <source src="Please_Dont_Cry__David_Fesliyan.mp3" type="audio/mpeg">  
+                </audio>  
+                <button onclick="playAudio()">PLAY MUSIC</button> <br>
+                <button onclick="pauseAudio()">PAUSE MUSIC</button> <br>
+                <button onclick="next1()">START MARK's STORY</button> <br>
+                <button onclick="next2()">START SAMEER's STORY</button> <br>
+                <button onclick="next3()">START DEVA's STORY</button> <br>
+                <button onclick="About()">GITHUB Page of Creator</button>
+            </article>
+            <article class="column" style="margin-top: 10%;">
+                <strong>ACKNOWLEDGEMENTS & NOTES</strong>
+                <br>
+                <br>
+                These are three diary entries by three kids made into a story.
+                <br>
+                The website is non-commercial and for the purpose of telling a story.
+                <br>
+                All characters are not fictional, I must admit. Though, most actually are.
+                <br>
+                It was impossible for me to capture people's stories. So, these are mostly my own.
+                <br>
+                This is not aimed at any social, political, religious or religio-political organisation
+                <br>
+                Thanks for visiting!
+            </article>
+        </section>
+        <script>
+            var x = document.getElementById("myAudio"); 
+        function pauseAudio()
+        {
+          x.pause();
+        }
+        function playAudio() { 
+          x.play(); 
+        } 
+        function next1(){
+            location.href="MarkStory.html"
+        }
+        function next2(){
+            location.href="SameerStory.html"
+        }
+        function next3(){
+            location.href="DevaStory.html"
+        }
+        function About(){
+            location.href = "https://www.github.com/nitinr2510"
+        }
+        </script>
+    </body>
+</html>

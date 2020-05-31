@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Mark's Letter
+        </title>
+        <style>
+            body{
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-top: 0.5rem;
+                
+            }
+            header{
+                background-color: black;
+                padding: 1.2rem;
+                border: 0.7rem white double;
+                text-align: left;
+                font-family: chiller;
+                font-size: 130px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;        
+            }
+            #pic{
+                background-image: url("brassilia.jpg");
+                height: 700px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-bottom: 1rem black solid;
+                margin-bottom: 1.5rem;
+            }
+            image:hover{
+                opacity: 0.5;
+            }
+            Button{
+                margin: 1.5rem;
+                padding: 0.2rem;
+            }            
+           
+        </style>
+    </head>
+    <body>
+       
+        <section>
+            <article id="pic">
+                <header>
+                    Mark's Letter
+                </header>
+                <button onclick="playAudio()">Start this Page</button>
+                <audio id="myAudio" autoplay>   
+                    <source src="Tears_Wont_Stop__David_Fesliyan.mp3" type="audio/mpeg">  
+                </audio>  
+            </article>
+            <article style="text-align: center; color: beige; background-color: black; padding: 0.5rem; margin-bottom: 0.8rem;">
+                ...A paper found in a church in Brazil...
+            </article>
+            <article style="text-align: justify; color: beige; background-color: black; padding: 0.5rem;">
+                23rd May 2020
+                <br>
+                It has been 2 days since I ate something good. It has been a month since I visited school and about a week since I've seen mom.
+                <br>
+                I don't know how mom would be doing anyway.<br>I do not remember mom sinning. She was such a pious lady.<br>
+                Her hair was beautiful and so was her smile. She used to visit the Church every sunday, even though the local magistrate asked us not to.<br>
+                She obeyed the president's call to work. She was a true patriot. <em>por que ela deve sofrer?</em><br>  
+                Oh senhor! Why must we be punished in this way?<br>
+                <br>
+                The president said there shall be no disease, there shall be no deaths and that everything shall be peaceful
+                <br>
+                Now, there is no food, there is no clean water and the President never comes to help.
+                <br>
+                I need help. And my mom needs help too. We are a 209 million strong people, and about 10,000 of us are already dead.
+                <br>
+                The man in the white mask who brings me food everyday is the only one I like now. Senhor, please come forth. Help me now.
+                <br>
+                Please return mãe. The padre says you are the only one who can do it. I believe him. That stupid doctor said, you shall now<br>
+                let mãe sleep in her grave. I do not want that, Lord. Let her rest, but ask her to speak to me often.
+                <br>I shall be here next Sunday too, Deus.
+                <br>
+                Please ask her to wake up soon.
+                <br>
+                <br>
+                - Mark
+            </article>
+            <article style="text-align: left; color: beige; background-color: black; padding: 0.5rem; margin-top: 0.8rem;">
+                A week later, a news stormed the national news,<br>
+                <em>"...13-years old kid dies of the deadly wave of infections that have hit the globe. This has only strengthened protests against<br>
+                the President's policies and down-playing of the risks involved in COVID-19. A heart-wrenching letter written by the boy was found in a local <br>
+                church by our correspondents where he is asking god to ask his mother to wake up. The mother of the child passed away three weeks ago..."</em>
+            </article>
+            
+            <p style="background-color: black; color: yellow; text-align: center; font-family: fantasy; padding: 0.4rem;">You've earned Mark's souvenir
+                <button onclick="home()">Head Back to the Shop</button>
+                <button onclick="india1()" >Collect Sameer's souvenir in India</button>
+            </p><br>
+           
+        </section>
+        <script>
+            function home(){
+                location.href="index.html"
+            }
+            function india1(){
+                location.href="SameerStory.html"
+            }
+            var x = document.getElementById("myAudio");
+        function playAudio() { 
+          x.play(); 
+        } 
+        </script>
+    </body>
+</html>

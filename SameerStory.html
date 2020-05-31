@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Sameer's Diary
+        </title>
+        <style>
+            header{
+                border-bottom: 0.4rem black double;
+             
+                text-align: center;
+                color: black;
+                padding: 0.3rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
+                font-size: 40px;
+                font-family: ink free;
+            }
+            body{
+                margin: none;
+                padding: 0.5rem;
+                background-image: url("page.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            .row 
+            {
+                display: flex;
+            }
+            .column 
+            {
+                flex: 30%;
+                padding: .1rem;
+            }
+            button{
+                margin-top: 0.2rem;
+                font-size: 18px;
+                background-color:transparent;
+                border-right: 0.2rem black solid;
+                border-left: 0.2rem black solid;
+                border-top: none;
+                border-bottom: none;
+                color: black;
+                opacity: 0.8;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                padding: 0.3rem;
+            }
+            button:hover{
+                background-color: azure;
+                color: red;
+                border: 0.2rem blueviolet double;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Sameer's Diary
+        </header>
+        <p style="text-align: center;">
+        <button onclick="playAudio()">Start reading</button>
+        <button onclick="home()">Go Back to the Souvenir shop</button>
+        <button onclick="deva()">Head to Central India to receive Deva's Souvenir</button>
+        </p>
+        <section class="row">
+            <article class="column">
+                24th May 2020
+                <br>
+                Dear Diary,
+                <br>
+                The lockdown has already been extended for 60 days now. I resent sitting up here throughout the day - on this laptop and literally doing nothing but sitting alone.
+                I feel terrible locked in here. Though mom clearly makes wonderful food, her experiments with them cuz I'm home only prove that she is awesome. 
+                But I clearly feel weird locked in here.
+                <br>
+                <br>
+                Father has sufficient savings, but he clearly is in distress. His employer has certainly cut his salary and I know for sure he is hiding stuff.
+                <br>
+                The bussiness is bad, the economy is bad and everything is bad except for the government which will have enough to digest and the academic institutions
+                which will have enough to feign tutions and earn. 
+                <br>
+                Seriously, diary, do you think all the people we trust are good people - like right from Prime Minister to our very family?
+                I have come to suppose not. Some people like our parents are good to us, and not so good to probably their extended kin or maybe their employees or collegues.
+                While some like the government are good only to those who shall elect them or at least to those who have enough sympathy from all peopleso that
+                the government can only invest there and still have everyone's support.
+                <br>
+                This is a bloody place, I tell you.
+                <br>
+                <br>
+                Oh, do you know, Karthik contacted corona last week and is still in hospital, though the doctors say he is fine. He is a great chap, you know.
+                <br>
+                I just wish he gets well and this lockdown gets over too.
+                <br>
+                Good night, diary.<br><br>
+                -Sameer,
+                <br>Delhi
+
+        <audio id="myAudio" autoplay>   
+            <source src="Beautiful_Memories__David_Fesliyan.mp3" type="audio/mpeg">  
+        </audio>
+        </article>
+        <article class="column">
+            <img src="pen.png" style="height: 200px; width: 200px;">
+        </article>
+        </section>
+    </body>
+    <script>
+          var x = document.getElementById("myAudio");
+        function playAudio() { 
+          x.play(); 
+        } 
+        function home(){
+            location.href="index.html"
+        }
+        function deva(){
+            location.href="DevaStory.html"
+        }
+    </script>
+
+</html>

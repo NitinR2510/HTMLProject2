@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        The Final Credits
+    </title>
+<style>
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+button{
+               background-color: Transparent;
+               padding: 0.5rem;
+               margin: 1rem;
+                background-repeat:no-repeat;
+                cursor:pointer;
+                overflow: hidden;
+                outline:none;
+                color: antiquewhite;
+                border: none;
+}     
+button:hover{
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+    <source src="Credits.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Credits & Acknowledgements</h1>
+    <p>Thankyou for playing the story...
+      <br>
+      I apologise if anyone is offended. The story was for the purpose of story alone.
+      <br>
+      And hope most of you enjoyed it.
+        <br>
+        All music clips were from fesliyan studio<br>
+        Suggestions & complains are welcome on nitzhere2510@gmail.com<br>
+        <button onclick="home()">Go Back to Shop</button>
+    </p>
+  </div>
+  <script>
+    function home(){
+      location.href = "index.html"
+    }
+  </script>
+</body>
+</html>
